@@ -1,5 +1,17 @@
-export const add2Nums = (num1, num2) => num1 + num2;
+const express = require('express');
+const app = express();
 
+app.get('/', (req, res) => {
+  res.send('world hello');
+
+});
+
+app.get('/api/courses', (req, res) => {
+
+});
+
+app.listen(3000, () => console.log('Listening on port 3000...'));
+  res.send([1, 2, 3, 4]); // an array of 3 numbr
 
 // Node & Express js REST API
 
@@ -43,3 +55,5 @@ POST / api/customers
 
 
 // Response
+
+re
